@@ -1,0 +1,7 @@
+### 18/03/2024 ###
+- Make information appear on the tiles (username, trends)
+- Image full screen display (and un-display) on click within feed 
+- Welcome page with app name
+- Nav bar to browse through different tabs
+- Create personal profil tab
+- Create search tab
