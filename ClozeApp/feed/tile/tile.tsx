@@ -16,9 +16,9 @@ import {Int32} from 'react-native/Libraries/Types/CodegenTypes';
 const styles = StyleSheet.create({
   tileContainer: {
     backgroundColor: 'blue',
-    width: '50%',
     height: 300,
-    margin: 10,
+    marginVertical: 5,
+    borderRadius: 5,
   },
 });
 
