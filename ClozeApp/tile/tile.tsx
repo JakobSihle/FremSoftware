@@ -3,7 +3,7 @@
  */
 import React from 'react';
 import type {PropsWithChildren} from 'react';
-import {StyleSheet} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import {Int32} from 'react-native/Libraries/Types/CodegenTypes';
 
 /**
@@ -13,7 +13,14 @@ import {Int32} from 'react-native/Libraries/Types/CodegenTypes';
 /**
  * LOCAL STYLES DEFINITION
  */
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  tileContainer: {
+    backgroundColor: 'blue',
+    width: '50%',
+    height: 300,
+    margin: 10,
+  },
+});
 
 /**
  * COMPONENT PROPS DEFINITION
@@ -27,7 +34,7 @@ type tileProps = PropsWithChildren<{
  * COMPONENT FUNCTION DEFINITION
  */
 function Tile({children, prop1, prop2}: tileProps): React.JSX.Element {
-  return <view></view>;
-};
+  return <View style={styles.tileContainer} />;
+}
 
 export default Tile;

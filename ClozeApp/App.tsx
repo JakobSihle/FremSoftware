@@ -25,6 +25,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 import Section from './section/section';
+import Tile from './tile/tile';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -61,6 +62,7 @@ function App(): React.JSX.Element {
             Read the docs to discover what to do next:
           </Section>
           <LearnMoreLinks />
+          <Tile prop1="Yo" prop2="32"/>
         </View>
       </ScrollView>
     </SafeAreaView>
