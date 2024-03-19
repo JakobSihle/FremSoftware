@@ -1,8 +1,18 @@
+/**
+ * GLOBAL IMPORTS
+ */
 import {StyleSheet, Text, View, useColorScheme} from 'react-native';
 import type {PropsWithChildren} from 'react';
 import React from 'react';
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
+/**
+ * IMPORTS FROM OTHER COMPONENTS
+ */
+
+/**
+ * LOCAL STYLES DEFINITION
+ */
 const styles = StyleSheet.create({
   sectionContainer: {
     marginTop: 32,
@@ -22,10 +32,16 @@ const styles = StyleSheet.create({
   },
 });
 
+/**
+ * COMPONENT PROPS DEFINITION
+ */
 type SectionProps = PropsWithChildren<{
   title: string;
 }>;
 
+/**
+ * COMPONENT FUNCTION DEFINITION
+ */
 function Section({children, title}: SectionProps): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
   return (
