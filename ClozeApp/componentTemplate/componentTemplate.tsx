@@ -3,7 +3,7 @@
  */
 import React from 'react';
 import type {PropsWithChildren} from 'react';
-import {StyleSheet} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import {Int32} from 'react-native/Libraries/Types/CodegenTypes';
 
 /**
@@ -27,7 +27,7 @@ type componentTemplateProps = PropsWithChildren<{
  * COMPONENT FUNCTION DEFINITION
  */
 function ComponentTemplate({children, prop1, prop2}: componentTemplateProps): React.JSX.Element {
-  return <view></view>;
-};
+  return <View />;
+}
 
 export default ComponentTemplate;
