@@ -18,7 +18,7 @@ const styles = StyleSheet.create({});
 /**
  * COMPONENT PROPS DEFINITION
  */
-type componentTemplateProps = PropsWithChildren<{
+type tileProps = PropsWithChildren<{
   prop1: string;
   prop2: Int32;
 }>;
@@ -26,8 +26,8 @@ type componentTemplateProps = PropsWithChildren<{
 /**
  * COMPONENT FUNCTION DEFINITION
  */
-function ComponentTemplate({children, prop1, prop2}: componentTemplateProps): React.JSX.Element {
+function Tile({children, prop1, prop2}: tileProps): React.JSX.Element {
   return <view></view>;
 };
 
-export default ComponentTemplate;
+export default Tile;
