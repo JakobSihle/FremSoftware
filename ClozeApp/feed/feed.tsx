@@ -48,12 +48,16 @@ function Feed({children, prop1, prop2}: componentTemplateProps): React.JSX.Eleme
   return (
     <View style={styles.feedContainer}>
       <View style={styles.feedLeftColumn}>
-        <Tile prop1="Yo" prop2="32" />
-        <Tile prop1="Yo" prop2="32" />
+        <Tile imgPath={require('./../dump/img/mbappe1.png')} />
+        <Tile imgPath={require('./../dump/img/jake1.png')} />
+        <Tile imgPath={require('./../dump/img/travis1.png')} />
+        <Tile imgPath={require('./../dump/img/mbappe2.png')} />
       </View>
       <View style={styles.feedRightColumn}>
-        <Tile prop1="Yo" prop2="32" />
-        <Tile prop1="Yo" prop2="32" />
+        <Tile imgPath={require('./../dump/img/jazzybazz1.png')} />
+        <Tile imgPath={require('./../dump/img/mbappe3.png')} />
+        <Tile imgPath={require('./../dump/img/jake2.png')} />
+        <Tile imgPath={require('./../dump/img/jazzybazz1.png')} />
       </View>
     </View>
   );

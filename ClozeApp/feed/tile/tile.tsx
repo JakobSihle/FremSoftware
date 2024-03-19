@@ -3,7 +3,7 @@
  */
 import React from 'react';
 import type {PropsWithChildren} from 'react';
-import {StyleSheet, View} from 'react-native';
+import {Image, StyleSheet, View} from 'react-native';
 import {Int32} from 'react-native/Libraries/Types/CodegenTypes';
 
 /**
@@ -15,10 +15,18 @@ import {Int32} from 'react-native/Libraries/Types/CodegenTypes';
  */
 const styles = StyleSheet.create({
   tileContainer: {
-    backgroundColor: 'blue',
-    height: 300,
+    backgroundColor: '#d3d3d3',
+    width: '100%',
+    aspectRatio: 3 / 4,
     marginVertical: 5,
     borderRadius: 5,
+  },
+  imageDisplay: {
+    borderRadius: 5,
+    width: undefined,
+    height: undefined,
+    resizeMode: 'cover',
+    flex: 1,
   },
 });
 
@@ -26,15 +34,18 @@ const styles = StyleSheet.create({
  * COMPONENT PROPS DEFINITION
  */
 type tileProps = PropsWithChildren<{
-  prop1: string;
-  prop2: Int32;
+  imgPath: string;
 }>;
 
 /**
  * COMPONENT FUNCTION DEFINITION
  */
-function Tile({children, prop1, prop2}: tileProps): React.JSX.Element {
-  return <View style={styles.tileContainer} />;
+function Tile({children, imgPath}: tileProps): React.JSX.Element {
+  return (
+    <View style={styles.tileContainer}>
+      <Image style={styles.imageDisplay} source={imgPath} />
+    </View>
+  );
 }
 
 export default Tile;
